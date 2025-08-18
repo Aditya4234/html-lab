@@ -1,0 +1,237 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.6;
+    background-color: #2c36ad;
+    color: #333;
+    padding: 0;
+}
+
+/* ====== Header ====== */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    border-bottom: 2px solid #4526dc;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+header img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    color: #0d1218;
+}
+
+header h3 {
+    font-weight: 700;
+    color: #07111c;
+}
+
+header p {
+    color: #000408;
+}
+
+/* ====== Navigation ====== */
+nav {
+    background-color: #0f38cd;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 10px 15px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 12px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border-radius: 3px;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #1c5980;
+}
+
+/* ====== Main Content ====== */
+.main-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+}
+
+.container h1 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+/* ====== Form ====== */
+.form {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+}
+
+.form h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #34495e;
+}
+
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1.5px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover,
+button:focus {
+    background-color: #1c5980;
+}
+
+
+
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: ;
+        
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header img {
+        width: 80px;
+        height: 80px;
+    }
+
+    nav ul {
+        
+        gap: 5px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .main-content,
+    .container,
+    .form {
+        width: 95%;
+        padding: 15px;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 992px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: ;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 8px;
+    }
+
+    .main-content,
+    .container,
+    .form {
+        width: 90%;
+    }
+}
+
+/* ===== Large Devices (Desktop) ===== */
+@media (min-width: 993px) {
+    .main-content {
+        max-width: 900px;
+    }
+
+    .container, .form {
+        max-width: 600px;
+    }
+}
